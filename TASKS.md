@@ -1,6 +1,8 @@
 # TASKS — Partituras
 
-> EN CURSO: (nada)
+> EN CURSO: migración 0002 (perfiles + cierre de lectura pública) escrita,
+> pendiente de revisión del dueño. Próximo paso: aplicarla cuando se apruebe
+> y crear al menos un usuario de prueba con su perfil.
 
 ## T1. Scaffold y primera pantalla con datos reales  [hito 1]
 - [x] Vite + React + Tailwind corriendo en local
