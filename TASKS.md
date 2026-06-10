@@ -10,7 +10,12 @@
 - [x] Setup de testing listo, con un unitario corriendo
 
 ## T2. Auth por email + perfiles (rol profesor/alumno)
-- [ ] (a detallar al llegar)
+- [ ] Migración 0002: tabla `perfiles` + RLS, y cierre de la lectura pública
+      de `canciones` (revisada por el dueño ANTES de aplicar)
+- [ ] Pantalla de login solo email (sin registro abierto; alta manual en panel)
+- [ ] Sesión: canciones solo para logueados, logout, nombre y rol en pantalla
+- [ ] Tests: unitarios de lógica nueva + verificación RLS (anon no lee
+      canciones, autenticado sí)
 
 ## T3. Núcleo del MVP: subir y buscar partituras
 - [ ] (a detallar al llegar)
