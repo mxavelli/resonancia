@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { supabase } from './clienteSupabase.js'
+import { descripcionCancion } from './logica/canciones.js'
 
 export default function Aplicacion() {
   const [canciones, setCanciones] = useState(null)
@@ -35,10 +36,7 @@ export default function Aplicacion() {
             {canciones.map((cancion) => (
               <li key={cancion.id} className="px-4 py-3">
                 <p className="font-medium text-stone-800">{cancion.titulo}</p>
-                <p className="text-sm text-stone-500">
-                  {cancion.compositor ?? 'Compositor desconocido'}
-                  {cancion.tonalidad && ` · ${cancion.tonalidad}`}
-                </p>
+                <p className="text-sm text-stone-500">{descripcionCancion(cancion)}</p>
               </li>
             ))}
           </ul>

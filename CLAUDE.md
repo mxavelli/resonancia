@@ -103,4 +103,5 @@ de entrada.
 ## Comandos
 - dev: npm run dev
 - build: npm run build
-- (lint, test, deploy: completar cuando existan)
+- test: npm test (vitest)
+- (lint, deploy: completar cuando existan)
