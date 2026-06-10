@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { supabase } from './clienteSupabase.js'
 import PantallaIngreso from './PantallaIngreso.jsx'
 import ListaCanciones from './ListaCanciones.jsx'
+import Encabezado from './Encabezado.jsx'
 
 export default function Aplicacion() {
   const [sesion, setSesion] = useState(null)
@@ -19,5 +20,14 @@ export default function Aplicacion() {
   }, [])
 
   if (cargandoSesion) return null
-  return sesion ? <ListaCanciones /> : <PantallaIngreso />
+  if (!sesion) return <PantallaIngreso />
+
+  return (
+    <main className="min-h-screen bg-stone-50 px-6 py-10">
+      <div className="mx-auto max-w-2xl">
+        <Encabezado usuarioId={sesion.user.id} />
+        <ListaCanciones />
+      </div>
+    </main>
+  )
 }
