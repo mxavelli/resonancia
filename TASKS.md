@@ -14,8 +14,8 @@
       de `canciones` (revisada por el dueño ANTES de aplicar)
 - [x] Pantalla de login solo email (sin registro abierto; alta manual en panel)
 - [x] Sesión: canciones solo para logueados, logout, nombre y rol en pantalla
-- [ ] Tests: unitarios de lógica nueva + verificación RLS (anon no lee
-      canciones, autenticado sí)
+- [x] Tests: verificación RLS (anon no lee canciones ni perfiles, autenticado
+      sí, nadie escribe). T2 no sumó lógica pura nueva que amerite unitarios.
 
 ## T3. Núcleo del MVP: subir y buscar partituras
 - [ ] (a detallar al llegar)
