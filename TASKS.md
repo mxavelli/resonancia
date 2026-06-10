@@ -1,6 +1,8 @@
 # TASKS — Partituras
 
-> EN CURSO: (nada todavía)
+> EN CURSO: migración 0001 (tabla `canciones`) escrita, pendiente de revisión
+> del dueño. Próximo paso: cuando se apruebe, aplicarla contra la base, cargar
+> 2-3 filas de ejemplo y marcar la subtarea.
 
 ## T1. Scaffold y primera pantalla con datos reales  [hito 1]
 - [x] Vite + React + Tailwind corriendo en local
