@@ -4,7 +4,7 @@
 
 ## T1. Scaffold y primera pantalla con datos reales  [hito 1]
 - [x] Vite + React + Tailwind corriendo en local
-- [ ] Cliente Supabase configurado (env vars fuera del repo)
+- [x] Cliente Supabase configurado (env vars fuera del repo)
 - [ ] Tabla `canciones` creada vía migración versionada (revisada por mí)
 - [ ] Pantalla que lista filas reales de `canciones` desde la base
 - [ ] Setup de testing listo, con un unitario corriendo
